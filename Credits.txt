@@ -1,0 +1,16 @@
+Credits for third party Auxilaries goes to:
+-----------------------------------
+Button.bat v1.1 Hamza
+
+Getinput :Bind with Button v1.1
+
+GotoXY v1.0 : Mikael Sollenborn
+
+MessageBox: Rob van der Woude
+
+swat :LeeLu Soft
+
+SystemTrayMessage: Rob van der Woude
+----------------------------------
+Disclaimer:
+other utilities are reserved with with their rightful owner.
