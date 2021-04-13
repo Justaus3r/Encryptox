@@ -1,6 +1,6 @@
 # Encryptox v1.1
  
- # Use [Anfu](https://github.com/Justaus3r/Anfu) a python version of File and Folder encryption,i am actively working on it 
+ # Use [Anfu](https://github.com/Justaus3r/Anfu) instead.a python version of File and Folder encryption,i am actively working on it 
  
  A small tool for encrypting files with high level encryption.it provides a simple hybrid gui for interaction.any Suggestion,contribution,BUGS and report at x-neron@pm.me.
  <br>
