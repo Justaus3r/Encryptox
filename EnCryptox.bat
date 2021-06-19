@@ -2,7 +2,7 @@
 mode 91,30
 @Title EnCryptox
 : Sets the proper date and time stamp with 24Hr Time for log file naming
-: convention
+: convention,stupid isn't it using log file convention for time........
 
 SET HOUR=%time:~0,2%
 SET dtStamp9=%date:~-4%%date:~4,2%%date:~7,2%_0%time:~1,1%%time:~3,2%%time:~6,2% 
@@ -57,13 +57,13 @@ goto error
 :Loop
 type maml.lgo
 gotoxy 69 5
-exo /M:2:1 /C:0e /T:v /C:0b /T:1.1
+exo /M:2:1 /C:0e /T:v /C:0b /T:1.1Alpha
 echo.
-exo /M:2:1 /C:0c /T:Written by:  /C:0b /T:Zeeshan azeem 
+exo /M:2:1 /C:0c /T:Written by:  /C:0b /T:Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 Call Button.bat  35 10 "Encrypt a File" 35 14 "Decrypt a File" 35 18 "  Exit  " # Press
 Getinput /m %Press% /h 0b
 :: Check for the pressed button 
@@ -86,7 +86,7 @@ exo /M:2:1 /C:0c /T:[~] /C:0d /T:See Credits.txt to read Credits.
 goto selectfile
 :selectfile
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 Call Button.bat  35 13 "Choose a File" 35 16 "Go Back" 35 19 "Exit" # Press
 Getinput /m %Press% /h 0b
 if %errorlevel%==1 (goto choosefile)
@@ -111,7 +111,7 @@ for /f "tokens=* delims=" %%p in ('mshta.exe %dialog%') do set "file=%%p"
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 69 6
 exo /M:2:1 /C:0e /T:v /C:0b /T:1.1
 gotoxy 1 7
@@ -145,7 +145,7 @@ if %errorlevel%==3 (exit)
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 1 7
 exo /M:2:1 /C:0f /T: ----------------/C:0c /T:-------------/C:0d /T:----------------/C:0e /T:--------------/C:0b /T:-------------/C:0c /T:------------------
 gotoxy 1 8
@@ -156,7 +156,7 @@ call :getPassword user_password "Enter password here: "
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 30 10
@@ -171,7 +171,7 @@ if %errorlevel%==2 (cls & dontkeepsource)
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 30 10
@@ -205,7 +205,7 @@ if %errorlevel%==2 (exit)
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 30 10
@@ -276,11 +276,11 @@ type maml.lgo
 gotoxy 69 5
 exo /M:2:1 /C:0e /T:v /C:0b /T:1.1
 echo.
-exo /M:2:1 /C:0c /T:Written by:  /C:0b /T:Zeeshan azeem 
+exo /M:2:1 /C:0c /T:Written by:  /C:0b /T:Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 Call Button.bat  35 10 "Choose a File" 35 14 "Go Back" 35 18 "  Exit  " # Press
 Getinput /m %Press% /h 0b
 :: Check for the pressed button 
@@ -306,7 +306,7 @@ for /f "tokens=* delims=" %%p in ('mshta.exe %dialog%') do set "file=%%p"
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 69 6
 exo /M:2:1 /C:0e /T:v /C:0b /T:1.1
 gotoxy 1 7
@@ -343,18 +343,28 @@ if %errorlevel%==3 (exit)
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 1 7
 exo /M:2:1 /C:0f /T: ----------------/C:0c /T:-------------/C:0d /T:----------------/C:0e /T:--------------/C:0b /T:-------------/C:0c /T:------------------
 gotoxy 1 8
 type rescd.rs
 gotoxy.exe 30 19
 call :getPassword user_password "Enter password here: "
+gotoxy.exe 30 21
+call :getPassword user_passwordverify "Confirm Password: "
+if '%user_password%'=='%user_passwordverify%' goto Continuedecrypt
+goto errordecrypting
+:errordecrypting
+gotoxy.exe 30 22
+exo /M:2:1 /C:0c /T:Error:Passwords doesn't match..
+ping localhost -n 2 >nul
+exit
+:Continuedecrypt
 :: The user's password has been stored in the variable %user_password%
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 30 10
@@ -369,7 +379,7 @@ if %errorlevel%==2 (cls & dontkeepsource)
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 30 10
@@ -403,7 +413,7 @@ if %errorlevel%==2 (exit)
 cls
 type maml.lgo
 gotoxy 60 50
-exo /M:2:1 /C:0b /T:(C)Copyright 2020 Ash Terminal
+exo /M:2:1 /C:0b /T:(C)Copyright 2020 Justaus3r
 gotoxy 60 7
 exo /M:2:1 /C:0c /T: Time: /C:0b /T: %dtStamp%
 gotoxy 30 10
@@ -472,51 +482,6 @@ goto Loop
 echo Dependencies couldn't be verified so Program has self stopped to prevent Malfunction..
 pause >nul
 exit
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
